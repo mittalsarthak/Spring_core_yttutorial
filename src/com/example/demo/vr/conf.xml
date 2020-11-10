@@ -4,9 +4,11 @@
        xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id = "student" class = "com.example.demo.vr.Student">
-        <property name = "name" value = "Sarthak" />
-        <property name = "interestedCourse" value = "Something" />
-        <property name = "hobby" value = "Squash" />
-    </bean>
+
+    <context:annotation-config/>
+
+    <context:property-placeholder location="classpath:com/example/demo/vr/student-info.properties" />
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
+
+    <bean id = "student" class = "com.example.demo.vr.Student"/>
 </beans>
