@@ -2,11 +2,8 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id = "DataServiceObject" class="com.example.demo.DataService"></bean>
-
-    <bean id = "CallingServiceObject" class = "com.example.demo.CallingService"></bean>
-
-    <bean id = "AirtelUser" class = "com.example.demo.Airtel">
-        <property name = "service" ref = "DataServiceObject"/>
+    <bean id = "heartObject" class = "com.example.demo.autowiring.Heart"> </bean>
+    <bean id = "human" class = "com.example.demo.autowiring.Human" autowire="byType">
+<!--        <property name = "heart" ref = "HumanHeart"/>-->
     </bean>
 </beans>
