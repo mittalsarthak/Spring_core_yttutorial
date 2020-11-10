@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id = "DataServiceObject" class="com.example.demo.DataService"></bean>
+
+    <bean id = "CallingServiceObject" class = "com.example.demo.CallingService"></bean>
+
+    <bean id = "AirtelUser" class = "com.example.demo.Airtel">
+        <property name = "service" ref = "CallingServiceObject"/>
+    </bean>
+</beans>
