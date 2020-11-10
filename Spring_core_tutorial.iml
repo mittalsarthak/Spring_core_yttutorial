@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Conf" removed="false">
           <file>file://$MODULE_DIR$/src/com/example/demo/autowiring/conf.xml</file>
+          <file>file://$MODULE_DIR$/src/com/example/demo/Annotations/conf.xml</file>
         </fileset>
       </configuration>
     </facet>
