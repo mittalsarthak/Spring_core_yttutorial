@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class client {
     public static void main (String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
-        College college = context.getBean("collegeBean", College.class);
+        College college = context.getBean("college", College.class);
         System.out.println("Created bean is " + college);
         college.test();
     }
