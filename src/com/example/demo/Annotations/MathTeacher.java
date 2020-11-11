@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 public class MathTeacher implements Teacher{
 
     public MathTeacher() {
-        System.out.println("Mmamammm");
     }
 
     @Override
