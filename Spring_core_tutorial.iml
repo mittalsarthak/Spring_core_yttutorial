@@ -5,11 +5,9 @@
       <configuration>
         <fileset id="fileset" name="Conf" removed="false">
           <file>file://$MODULE_DIR$/src/com/example/demo/autowiring/conf.xml</file>
-
           <file>file://$MODULE_DIR$/src/com/example/demo/Annotations/conf.xml</file>
-
           <file>file://$MODULE_DIR$/src/com/example/demo/vr/conf.xml</file>
-
+          <file>file://$MODULE_DIR$/src/com/example/demo/beanLifeCycle/conf.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -22,5 +20,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Spring-5.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="postgresql-42.2.18" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
